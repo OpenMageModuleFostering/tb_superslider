@@ -1,0 +1,21 @@
+<layout version="0.1.0">
+     <default>
+	 		<reference name="head">
+				<action ifconfig="slideset/general_settings/enable" method="addCss"><stylesheet>css/superslider.css</stylesheet></action>
+				<action ifconfig="slideset/general_settings/jquery_lib" method="addJs"><script>superslider/jquery.min.js</script></action>
+				<action ifconfig="slideset/general_settings/enable" method="addJs"><script>superslider/jquery.easing.1.3.js</script></action>
+				<action ifconfig="slideset/general_settings/enable" method="addJs"><script>superslider/super.camera.js</script></action>
+			</reference>
+           
+      </default>
+	  
+	  
+	   <superslider_index_index>
+			<reference name="root">
+          <action method="setTemplate"><template>page/1column.phtml</template>     
+              </action>
+        </reference>
+    </superslider_index_index>
+      
+</layout>
+

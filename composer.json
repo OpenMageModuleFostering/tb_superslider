@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Tb_Superslider",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Tb Superslider is a Free magento extension based upon jquery camera slider.",
+    "authors": [
+    {
+        "name": "Rehan Mobin",
+        "email": "m.rehan.mobin@gmai.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

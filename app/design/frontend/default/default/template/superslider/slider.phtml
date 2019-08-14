@@ -1,0 +1,63 @@
+<?php
+/**
+ * Tb_Superslider
+ * 
+ /****************************************************************************
+ *                      MAGENTO EDITION USAGE NOTICE                         *
+ ****************************************************************************/
+ /* This package designed for Magento Community edition. Author does not provide extension support in case of incorrect edition usage.
+ /****************************************************************************
+ * @category 	TB
+ * @package 	Tb_Superslider
+ * @copyright 	Copyright (c) 2014
+ * @license 	http://opensource.org/licenses/OSL-3.0
+ */
+/**
+ * superslider template file
+ */
+?>
+
+<?php
+
+$prams = $this->setSlideParams();
+?>
+ <script>
+		jQuery(function(){
+			jQuery('#superslider').camera({
+				pagination: <?php echo $prams['pagination']?>,
+				navigation: <?php echo $prams['navigation']?>,
+				hover: <?php echo $prams['hover']?>,
+				time: <?php echo $prams['time']?>,
+				height: '<?php echo $prams['height']?>px',
+				transPeriod: <?php echo $prams['transPeriod']?>
+				
+			});
+
+		});
+	</script>
+
+
+<?php
+
+$sliders = $this->getSliderCollection();
+//var_dump( $sliders);
+$imagePath = Mage::getBaseUrl('media');
+if(count($sliders)){ ?>
+<div class="camera_wrap camera_azure_skin" id="superslider">
+	<?php foreach($sliders as $_slide){  ?>
+		<div <?php if($_slide->getUrl()){?>data-link="<?php echo $_slide->getUrl(); ?>"<?php } ?> data-src="<?php echo $imagePath.$_slide->getImage(); ?>">
+                <?php if($_slide->getContent()){ ?>
+				
+				
+				<div class="camera_caption fadeIn">
+                    <?php echo str_replace('{slide_url}',$_slide->getUrl(),$_slide->getContent())?>
+                </div>
+				<?php } ?>
+				
+				
+        </div>
+			
+<?php	} ?>
+</div>
+<?php } ?>
+

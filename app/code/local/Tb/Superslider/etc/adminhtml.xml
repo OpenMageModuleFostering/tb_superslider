@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<config>
+	<menu>
+			<superslider translate="title" module="superslider">
+				<title>Super Slider</title>
+				<sort_order>80</sort_order>
+				<children>
+					<addslide translate="title" module="superslider">
+						<title>Add new Slide</title>
+						<sort_order>0</sort_order>
+						<action>superslider/adminhtml_slider/new</action>
+					</addslide>
+					<manageslide translate="title" module="superslider">
+						<title>Manage Slides</title>
+						<sort_order>10</sort_order>
+						<action>superslider/adminhtml_slider/index</action>
+					</manageslide>
+					<settings translate="title" module="superslider">
+						<title>Settings</title>
+						<sort_order>20</sort_order>
+						<action>adminhtml/system_config/edit/section/slideset</action>
+					</settings>
+				</children>
+			</superslider>
+	</menu>
+	<acl>
+      	<resources>
+				<all>
+                    <title>Allow Everything</title>
+                </all>
+				<admin>
+					<children>
+						<superslider>
+							<title>Super Slider</title>
+                            <sort_order>80</sort_order>
+							<children>
+							<addslide>
+									<title>Add new Slide</title>
+									<sort_order>0</sort_order>
+								</addslide>
+								<manageslide>
+									<title>Manage Slides</title>
+									<sort_order>10</sort_order>
+								</manageslide>
+								<settings>
+									<title>Settings</title>
+									<sort_order>20</sort_order>
+								</settings>
+							</children>
+						</superslider>
+						<system>
+							<children>
+								<config>
+									<children>
+										<slideset>
+											<title>Super Slider Settings</title>
+										</slideset>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+		</resources>
+	</acl>
+</config>

@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<config>
+	<tabs>
+		<tball translate="label" module="superslider">
+			<label>TB Super Slider</label>
+            <sort_order>300</sort_order>
+		</tball>
+	</tabs>
+	<sections>
+		<slideset translate="label" module="superslider">
+			<label>Super Slider Settings</label>
+			<tab>tball</tab>
+			<frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+			<show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store> 
+			<groups>
+				<how_to_use translate="label">
+					<label>How to use Super Slider</label>
+					<frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store> 
+					<fields>
+                        <info translate="labe">
+							<label>Implementation code</label>
+							<comment>
+                                <![CDATA[Past the following Block into any page<br />(Homepage example)<br /><strong>{{block type="superslider/superslider" name="superslider" alias="superslider" template="superslider/superslider.phtml"}}</strong>]]>
+                            </comment>
+							<frontend_type>label</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</info>
+					</fields>
+				</how_to_use>
+				<general_settings translate="label">
+					<label>Superslider gereral settings</label>
+					<frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+                        </enable>
+						<jquery_lib translate="label">
+                            <label>Include jquery library </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>select yes, no other jquery library included.</comment>
+                        </jquery_lib>
+						<height translate="label">
+							<label>Height (px)</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Specify height of slider in px.</comment>
+						</height>
+						<time translate="label">
+							<label>Time (ms)</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Time between the next slide.</comment>
+						</time>
+						<trans translate="label">
+							<label>Transition time (ms)</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Transition time of slide.</comment>
+						</trans>
+						<pagination translate="label">
+							<label>Pagination</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+						</pagination>
+						<pause translate="label">
+							<label>Pause on hover</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>70</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+						</pause>
+						<navigation translate="label">
+							<label>Navigation</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>80</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+						</navigation>
+					</fields>
+				</general_settings>
+			</groups>
+		</slideset>
+		
+	</sections>
+</config>
