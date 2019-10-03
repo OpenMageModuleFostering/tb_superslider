@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Tb_Superslider",
+    "name": "openmage-module-fostering\/tb_superslider",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Tb Superslider is a Free magento extension based upon jquery camera slider.",
     "authors": [
